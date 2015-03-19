@@ -10,7 +10,7 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 
 #append customizations to zshrc
 cat $code_dir.zshrc >> ~/.zshrc
-
+ln -s $code_dir/dotfiles/bunsen.zsh-theme ~/.oh-my-zsh/themes/bunsen.zsh-theme
 
 # vim customizations
 ln -s $code/solarized/vim-colors-solarized ~/.vim/bundle/vim-colors-solarized
