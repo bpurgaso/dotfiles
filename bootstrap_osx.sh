@@ -14,7 +14,6 @@ ln -s $code_dir/dotfiles/bunsen.zsh-theme ~/.oh-my-zsh/themes/bunsen.zsh-theme
 
 # vim customizations
 ln -s ~/code/dotfiles/.vimrc ~/.vimrc
-#ln -s $code/solarized/vim-colors-solarized ~/.vim/bundle/vim-colors-solarized
 
 # tmux customizations
 ln -s $code/dotfiles/.tmux.conf ~/.tmux.conf
