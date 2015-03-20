@@ -18,7 +18,7 @@ git clone https://github.com/bpurgaso/dotfiles.git
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 #append customizations to zshrc
-cat $code_dir.zshrc >> ~/.zshrc
+ln -s $code_dir/dotfiles/.zshrc ~/.zshrc
 ln -s $code_dir/dotfiles/bunsen.zsh-theme ~/.oh-my-zsh/themes/bunsen.zsh-theme
 
 # vim customizations
