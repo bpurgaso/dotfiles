@@ -10,8 +10,9 @@ cd $code_dir
 #install dependencies
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     sudo yum install git vim tmux
-elif [["$OSTYPE" == "darwin"* ]]; then
+elif [[ "$OSTYPE" == "darwin"* ]]; then
     brew install git macvim tmux reattach-to-user-namespace
+fi
 
 git clone https://github.com/altercation/solarized.git
 git clone https://github.com/bpurgaso/dotfiles.git

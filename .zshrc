@@ -1,5 +1,9 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/bpurgaso/.oh-my-zsh
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    export ZSH=/home/bpurgaso/.oh-my-zsh
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    export ZSH=/Users/bpurgaso/.oh-my-zsh
+fi
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -94,7 +98,11 @@ bindkey '^N' history-search-forward
 setopt AUTO_CD
 
 #aliases customizations
-source /Users/bpurgaso/.ansible/linkedin/ansible_rc
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    source /home/bpurgaso/.ansible/linkedin/ansible_rc
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    source /Users/bpurgaso/.ansible/linkedin/ansible_rc
+fi
 
 desktop_uri='bpurgaso-ld1.linkedin.biz'
 alias ch="ssh $desktop_uri"
